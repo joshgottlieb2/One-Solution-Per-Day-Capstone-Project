@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+    </style>
+
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,25 +17,15 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body class="main-body">
-    
+    <div class="video-wrapper">
+    <video width="100%" height="700" autoplay muted>
+        <source src="./images/One Solution Per Day - Made with Clipchamp.mp4" class="video">
+        Your browser does not support the video tag.
+    </video>
+    </div>
     <div class="wrapper">
         <header>
             <div class="header-wrapper">
-                <div class="hero-image">
-                    <div class="login">
-                        <button>LOGIN / SIGN UP</button>
-                      
-                
-                    </div>
-                    <div class="hero-text">
-                        We are all overwhelmed by the problems we see...
-                    </div>
-                    <div class="problem-images">
-                        <img src="./images/forest_fire.jpg" alt="forest_fire" class="fire-image">
-                    </div>
-                
-                </div>
-                
                 <nav class="navigation">
                     <ul class="nav-links-header">
                         <li><a href="index.html">HOME</a></li>
@@ -40,6 +39,10 @@
                         <li><a href="results.html">RESULTS</a></li>
                         <li class="grey-dash">|</li>
                         <li><a href="contact.html">CONTACT US</a></li>
+                        <li class="grey-dash">|</li>
+                        <li class="spacer"></li>
+                        <li class="grey-dash">|</li>
+                        <li class="login-link"><a href="contact.html">LOGIN/SIGN-UP</a></li>
                     </ul>
                 </nav>
             </div>
@@ -74,7 +77,7 @@
                     </div>
                     
                     <div class="the-process">
-                        <div class="container">
+                        <div class="process-container">
                             <div class="box">
                                 <img src="./images/diagnose.jpg">
                                 <span>Identify Problem</span>
@@ -161,8 +164,8 @@
                         USER LOCATION DATA     
                     </div>
                     <div class="map">
-                        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1U2XK-5pP7YDjvC0sqeBKzX-WcPG8tK4&ehbc=2E312F" width="640"
-                            height="480"></iframe>
+                        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1U2XK-5pP7YDjvC0sqeBKzX-WcPG8tK4&ehbc=2E312F" width=100%
+                            height="680"></iframe>
                     </div>
                     
                 </div>
@@ -196,12 +199,107 @@
 
         <footer>
             <div class="footer-wrapper">
+                <div class="logo-and-form">
+                    <div class="logo">
+                        <img src="./images/one_solution_logo.jpg">
+                    </div>
+                    <div class="form">
+                        <style>
+                            * {
+                                box-sizing: border-box;
+                            }
+                        
+                            input[type=text],
+                            select,
+                            textarea {
+                                width: 100%;
+                                padding: 12px;
+                                border: 1px solid #ccc;
+                                border-radius: 4px;
+                                resize: vertical;
+                            }
+                        
+                            label {
+                                padding: 12px 12px 12px 0;
+                                display: inline-block;
+                            }
+                        
+                            input[type=submit] {
+                                background-color: #1A3540;
+                                color: white;
+                                padding: 12px 20px;
+                                border: none;
+                                border-radius: 4px;
+                                cursor: pointer;
+                                float: right;
+                            }
+                        
+                            input[type=submit]:hover {
+                                background-color: #728EA6;
+                            }
+                        
+                            .container {
+                                border-radius: 5px;
+                                background-color: #B9CBD9;
+                                padding: 20px;
+                            }
+                        
+                            .col-25 {
+                                float: left;
+                                width: 25%;
+                                margin-top: 6px;
+                            }
+                        
+                            .col-75 {
+                                float: left;
+                                width: 75%;
+                                margin-top: 6px;
+                            }
+                        
+                            /* Clear floats after the columns */
+                            .row:after {
+                                content: "";
+                                display: table;
+                                clear: both;
+                            }
+                        
+                            /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+                            @media screen and (max-width: 600px) {
+                        
+                                .col-25,
+                                .col-75,
+                                input[type=submit] {
+                                    width: 100%;
+                                    margin-top: 0;
+                                }
+                            }
+                        </style>
+                        <h2>GET DAILY UPDATES</h2>
+                        <p>Stay connected. Be among the first to hear of new projects. Never miss exciting results!</p>
+                        
+                        <div class="container">
+                            <form action="/action_page.php">
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="fname">EMAIL:</label>
+                                    </div>
+                                    <div class="col-75">
+                                        <input type="text" id="fname" name="firstname" placeholder="email@sample.com">
+                                    </div>
+                                </div>
+                                
+                        
+                                <br>
+                                <div class="row">
+                                    <input type="submit" value="Submit">
+                                </div>
+                            </form>
+                        </div>
 
-                <div class="logo">
-                    LOGO
+                    </div>
                 </div>
                 <div class="footer-links">
-                    <ul>
+                    <ul class="footer-list">
                         <li><a href="index.html">HOME</a></li>
                         <li class="grey-dash">|</li>
                         <li><a href="projects.html">PROJECTS</a></li>
@@ -214,15 +312,6 @@
                         <li class="grey-dash">|</li>
                         <li><a href="contact.html">CONTACT US</a></li>
                     </ul>
-                </div>
-                <div class="updates">
-                    GET DAILY UPDATES. <br>
-                    Stay connected. Be among the first to hear of new projects. Never miss exciting results of past projects.
-                    <div class="newsletter-sign-up">
-                        ENTER EMAIL
-                        
-                    </div>
-                    
                 </div>
             </div>
         </footer>

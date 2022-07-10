@@ -1,118 +1,106 @@
 
 /* Header Styles Begin */
 body {
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
 }
 
-.login {
-    text-align: end;
+.video-wrapper {
+    background-color: black;
 }
 
-.login-button:hover {
-    background-color: rgb(156, 154, 154);
-    cursor: pointer;
-}
-
-.login-button {
-    background-color: #CCC;
-    color: white;
-    border-radius: 3px;
-    font-size: 1rem;
-    padding: .3rem .4rem;
-    border: none;
-    margin-top: 1rem;
+.video {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    background-color: black;
 }
 
 .header-wrapper {
-    margin: 0 20%;
-    padding: 0 2%;
-    /* background: white;
-    box-shadow: 0px 0px 10px rgb(86, 86, 86); */
-}
-
-.hero-text {
-
-}
-
-.problem-images {
-    height: 35rem;
-}
-
-.fire-image {
-    max-width: 45%;
-}
-
-nav {
-    border-top: 1.5px solid;
-    border-bottom: 1.5px solid;
-    margin-top: .75rem;
+    background-color: black;
 }
 
 .navigation {
-    background-color: white;
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
 }
 
 .nav-links-header {
     display: flex;
     list-style: none;
     justify-content: space-around;
-    padding: 0px;
+    padding: 1rem 10% 1rem 10%;
+    
     font-size: 1rem;
     font-weight: 600;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: .6rem;
-    margin-bottom: .6rem;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
 }
 
 .nav-links-header a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 
 .nav-links-header a:hover {
-    color: #923530;
+    color: #A3B2BF;
 }
 
 .grey-dash {
-    color: rgb(197, 197, 197);
+    color: white;
+}
+
+.spacer {
+    width: 20%;
+}
+
+.login-link {
+    justify-content: flex-end;
+   
 }
 
 .issue-of-the-day-margin {
-    background-color: #D7E2E8; 
+    background-color: #365B73; 
 }
 
 .issue-of-the-day-wrapper {
-    margin: 0 20%;
+    margin: 0 8%;
     padding: 0 2%;
     
 }
 
 .issue-of-the-day {
+    color: white;
     
 }
 
 .the-process-margin {
-    background-color: #FEDDD8;
+    background-color: #1A3540;
 }
 
 .the-process-wrapper {
-    margin: 0% 20%;
+    margin: 0% 8%;
     padding: 0 2%;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
 }
 
-.the-process {
-    
+.the-process {    
 }
 
 .the-process-text {
     font-size: 2rem;
     text-align: center;
     padding-top: 2rem;
-    
 }
 
-.container {
+.box span {
+    color: white;
+}
+
+.process-container {
   display: flex;
   width: 100%;
   padding: 4% 2%;
@@ -125,7 +113,7 @@ nav {
   overflow: hidden;
   transition: .5s;
   margin: 0 2%;
-  box-shadow: 0 20px 30px rgba(0,0,0,.1);
+  box-shadow: 0 20px 30px #1A3540;
   line-height: 0;
 }
 
@@ -142,21 +130,23 @@ nav {
   text-align: center;
   height: 40rem;
   line-height: 2.6;
+
 }
 
 .box:hover { flex: 1 1 50%; }
 .box:hover > img {
   width: 100%;
   height: 80%;
+  border-radius: 10%;
 }
  
 
 .next-week-issues-margin {
-    background-color: #CFE3E2;
+    background-color: #A3B2BF;
 }
 
 .next-week-issues-wrapper {
-    margin: 0 20%;
+    margin: 0 8%;
     padding: 0 2%;
 }
 
@@ -164,14 +154,17 @@ nav {
     
 }
 
+ul {
+    margin: 0%;
+}
+
 .stats-margin {
-    background-color: #EAE7E2;
+    background-color: #0D0D0D;
 }
 
 .stats-wrapper {
-    margin: 0 20%;
-    padding: 0 2%;
-    height: 15rem;
+    margin: 0 8%;
+    padding: 1.5rem 2% 1.5rem;
 }
 
 .stats {
@@ -179,22 +172,28 @@ nav {
     justify-content: space-around;
     font-size: 1.3rem;
     padding-top: 1rem;
+    color: white;
+    font-weight: 600;
+    padding-bottom: 1rem;
 }
 
 .stats-image-row {
     display: flex;
+    max-height: 100%;
+    height: 70%;
     
     
 }
 
 .stats-image-row div img {
     justify-content: space-around;
+    border-radius: 10%;
 }
 
-.a {width: 200%;
-    max-width: 200%;
+.a {width: 180%;
+    max-width: 180%;
     margin-right: 20%;
-    margin-left: 35%;
+    margin-left: 39%;
 }
 
 .b {width: 100%;
@@ -210,9 +209,9 @@ nav {
 .stats-numbers {
     display: flex;
     justify-content: space-around;
-    font-weight: 800;
+    font-weight: 400;
     font-size: x-large;
-    color: maroon;
+    color: white;
 }
 
 .user-map-margin {
@@ -220,33 +219,33 @@ nav {
 }
 
 .user-map-wrapper {
-    margin: 0 20%;
+    margin: 0 8%;
     padding: 0 2%;
+    height: 50rem;
 }
 
 .user-map {
     text-align: center;
     font-size: 1.3rem;
     padding: 1rem 0 1rem;
-    
+    font-family: 'Montserrat', sans-serif;   
 }
 
 .map {
     align-content: center;
     margin: 0 0 0 0;
-    padding: 0 0 1rem 5rem;
-    justify-content: center
-
-    
-    
+    padding: 0 0 1rem;
+    justify-content: center;
+    height: 20rem;
+      
 }
 
 .past-projects-margin {
-    background-color: #FCC9C5;
+    background-color: #1A3540;
 }
 
 .past-projects-wrapper {
-    margin: 0 20%;
+    margin: 0 8%;
     padding: 0 2%;
 }
 
@@ -255,11 +254,11 @@ nav {
 }
 
 .suggest-margin {
-    background-color: #D7E2E8;
+    background-color: #728EA6;
 }
 
 .suggest-wrapper {
-    margin: 0 20%;
+    margin: 0 8%;
     padding: 0 2%;
 }
 
@@ -268,10 +267,65 @@ nav {
 }
 
 footer {
-    background-color: #CFE3E2;
+    background-color: #0D0D0D;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 .footer-wrapper {
-    margin: 0 20%;
+    margin: 0 8%;
     padding: 0 2%;
+    background-color: #0D0D0D;
+    color: white;
 }
+
+.footer-list {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding: 1rem 10% 1rem 10%;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #0D0D0D;
+    color: white;
+}
+
+.footer-list a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.footer-list a:hover {
+    color: #A3B2BF;
+}
+
+.logo img {
+    
+    height: 25rem;
+    border-radius: 50%;
+}
+
+.logo-and-form {
+    display: flex;
+}
+
+.container {
+    color: black;
+}
+
+
+
+.form {
+    padding-top: 4rem;
+}
+
+/* .spacer {
+    width: 20%;
+}
+
+.login-link {
+    justify-content: flex-end;
+   
+} */ 
