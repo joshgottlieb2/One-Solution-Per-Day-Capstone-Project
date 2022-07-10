@@ -1,0 +1,277 @@
+
+/* Header Styles Begin */
+body {
+    font-family: sans-serif;
+}
+
+.login {
+    text-align: end;
+}
+
+.login-button:hover {
+    background-color: rgb(156, 154, 154);
+    cursor: pointer;
+}
+
+.login-button {
+    background-color: #CCC;
+    color: white;
+    border-radius: 3px;
+    font-size: 1rem;
+    padding: .3rem .4rem;
+    border: none;
+    margin-top: 1rem;
+}
+
+.header-wrapper {
+    margin: 0 20%;
+    padding: 0 2%;
+    /* background: white;
+    box-shadow: 0px 0px 10px rgb(86, 86, 86); */
+}
+
+.hero-text {
+
+}
+
+.problem-images {
+    height: 35rem;
+}
+
+.fire-image {
+    max-width: 45%;
+}
+
+nav {
+    border-top: 1.5px solid;
+    border-bottom: 1.5px solid;
+    margin-top: .75rem;
+}
+
+.navigation {
+    background-color: white;
+}
+
+.nav-links-header {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding: 0px;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: .6rem;
+    margin-bottom: .6rem;
+}
+
+.nav-links-header a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.nav-links-header a:hover {
+    color: #923530;
+}
+
+.grey-dash {
+    color: rgb(197, 197, 197);
+}
+
+.issue-of-the-day-margin {
+    background-color: #D7E2E8; 
+}
+
+.issue-of-the-day-wrapper {
+    margin: 0 20%;
+    padding: 0 2%;
+    
+}
+
+.issue-of-the-day {
+    
+}
+
+.the-process-margin {
+    background-color: #FEDDD8;
+}
+
+.the-process-wrapper {
+    margin: 0% 20%;
+    padding: 0 2%;
+}
+
+.the-process {
+    
+}
+
+.the-process-text {
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 2rem;
+    
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  padding: 4% 2%;
+  box-sizing: border-box;
+  height: 40rem;
+}
+
+.box {
+  flex: 1;
+  overflow: hidden;
+  transition: .5s;
+  margin: 0 2%;
+  box-shadow: 0 20px 30px rgba(0,0,0,.1);
+  line-height: 0;
+}
+
+.box > img {
+  width: 100%;
+  height: calc(100% - 10vh);
+  object-fit: cover; 
+  transition: .5s;
+}
+
+.box > span {
+  font-size: 3.8vh;
+  display: block;
+  text-align: center;
+  height: 40rem;
+  line-height: 2.6;
+}
+
+.box:hover { flex: 1 1 50%; }
+.box:hover > img {
+  width: 100%;
+  height: 80%;
+}
+ 
+
+.next-week-issues-margin {
+    background-color: #CFE3E2;
+}
+
+.next-week-issues-wrapper {
+    margin: 0 20%;
+    padding: 0 2%;
+}
+
+.next-week-issues {
+    
+}
+
+.stats-margin {
+    background-color: #EAE7E2;
+}
+
+.stats-wrapper {
+    margin: 0 20%;
+    padding: 0 2%;
+    height: 15rem;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.3rem;
+    padding-top: 1rem;
+}
+
+.stats-image-row {
+    display: flex;
+    
+    
+}
+
+.stats-image-row div img {
+    justify-content: space-around;
+}
+
+.a {width: 200%;
+    max-width: 200%;
+    margin-right: 20%;
+    margin-left: 35%;
+}
+
+.b {width: 100%;
+    max-width: 35%;
+    margin-left: 65%;
+}
+
+.c {width: 100%;
+    max-width: 50%;
+    margin-left: 35%;
+}
+
+.stats-numbers {
+    display: flex;
+    justify-content: space-around;
+    font-weight: 800;
+    font-size: x-large;
+    color: maroon;
+}
+
+.user-map-margin {
+    background-color: #B9CBD9;
+}
+
+.user-map-wrapper {
+    margin: 0 20%;
+    padding: 0 2%;
+}
+
+.user-map {
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 1rem 0 1rem;
+    
+}
+
+.map {
+    align-content: center;
+    margin: 0 0 0 0;
+    padding: 0 0 1rem 5rem;
+    justify-content: center
+
+    
+    
+}
+
+.past-projects-margin {
+    background-color: #FCC9C5;
+}
+
+.past-projects-wrapper {
+    margin: 0 20%;
+    padding: 0 2%;
+}
+
+.past-projects {
+    
+}
+
+.suggest-margin {
+    background-color: #D7E2E8;
+}
+
+.suggest-wrapper {
+    margin: 0 20%;
+    padding: 0 2%;
+}
+
+.suggest {
+    
+}
+
+footer {
+    background-color: #CFE3E2;
+}
+
+.footer-wrapper {
+    margin: 0 20%;
+    padding: 0 2%;
+}
