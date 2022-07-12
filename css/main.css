@@ -23,6 +23,10 @@ body {
     background-color: black;
     margin: 0px;
     padding: 0px;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
 }
 
 .nav-links-header {
@@ -60,6 +64,10 @@ body {
    
 }
 
+/* END HEADER */
+/* BEGIN ISSUE OF THE DAY */
+
+
 .issue-of-the-day-margin {
     background-color: #365B73; 
 }
@@ -67,13 +75,36 @@ body {
 .issue-of-the-day-wrapper {
     margin: 0 8%;
     padding: 0 2%;
-    
+    color: white;
 }
 
-.issue-of-the-day {
-    color: white;
-    
+.project-left {
+    width: 50%;
 }
+
+.project-right {
+
+}
+
+.project-title {
+    color: white;
+    text-align:center;
+    font-size: 2rem;
+    font-weight: 400; 
+    padding: 2rem 0rem;   
+}
+
+.project-of-the-day {
+    display: flex;
+}
+
+.issue-of-the-day-image img {
+    height: 19rem;
+    padding-bottom: 2rem;
+}
+
+/* END ISSUE OF THE DAY */
+/* BEGIN PROBLEM-SOLVING PROCESS */
 
 .the-process-margin {
     background-color: #1A3540;
@@ -140,6 +171,9 @@ body {
   border-radius: 10%;
 }
  
+/* END PROBLEM-SOLVING PROCESS */
+
+/* BEGIN NEXT WEEK ISSUES */
 
 .next-week-issues-margin {
     background-color: #A3B2BF;
@@ -151,12 +185,128 @@ body {
 }
 
 .next-week-issues {
-    
+    padding-top: 2rem;
+}
+
+
+/* BEGIN TIMELINE ANIMATION */
+.upcoming-issues-image {
+    width: 20rem;
+    padding-left: 3rem;
+}
+
+.animation-text {
+    text-align: center;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align:center;
+  font-size: 2rem;
+  color: white;
+  font-weight: 400;
+}
+
+.timeline-animation {
+    padding: 50px 0;
+}
+
+.timeline-animation li {
+    position:relative;
+  list-style-type: none;
+  width: 6px;
+  background-color: white;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.timeline-animation li::after {
+  background: white;
+  content: '';
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position:absolute;
+  left:50%;
+  transform: translateX(-50%);
+  bottom: 0;
+}
+
+.timeline-animation li div {
+    position: relative;
+  width: 400px;
+  padding: 15px;
+  border-radius: 5px;
+  bottom: 0;
+  background: rgba(42,50,113, .28);
+}
+
+.timeline-animation li:nth-child(odd) div {
+    left: 45px;
+}
+
+.timeline-animation li:nth-child(even) div {
+    left: -445px;
+}
+
+.animation-text {
+    text-align: center;
+}
+
+time {
+  font-weight: bold;
+  font-size: 1.2rem;
+  display: block;
+  margin-bottom: 10px;
+  text-align: center;
+  
+}
+
+.timeline-animation li div {
+    visibility: hidden;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}
+
+.timeline-animation li:nth-child(odd) div {
+  transform: translate3d(200px, 0, 0);
+}
+
+.timeline-animation li:nth-child(even) div {
+  transform: translate3d(-200px, 0, 0);
+}
+
+.timeline-animation li.show div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+@media screen and (max-width: 900px) {
+  .timeline-animation li div {
+    width: 250px;
+  }
+  .timeline-animation li:nth-child(even) div {
+    left: -289px;
+    /*250+45-6*/
+  }
 }
 
 ul {
     margin: 0%;
 }
+
+/* END TIMELINE ANIMATION */
+/* END NEXT WEEK ISSUES */
+
+/* BEGIN STATS */
 
 .stats-margin {
     background-color: #0D0D0D;
@@ -214,6 +364,9 @@ ul {
     color: white;
 }
 
+/* END STATS */
+/* BEGIN USER MAP */
+
 .user-map-margin {
     background-color: #B9CBD9;
 }
@@ -240,6 +393,10 @@ ul {
       
 }
 
+/* END USER MAP */
+/* BEGIN PAST PROJECTS */
+
+
 .past-projects-margin {
     background-color: #1A3540;
 }
@@ -252,6 +409,9 @@ ul {
 .past-projects {
     
 }
+
+/* END PAST PROJECTS */
+/* BEGIN SUGGESTION FORM */
 
 .suggest-margin {
     background-color: #728EA6;
@@ -266,8 +426,11 @@ ul {
     
 }
 
+/* END SUGGESTION FORM */
+/* BEGIN FOOTER */
+
 footer {
-    background-color: #0D0D0D;
+    background-color: black;
     font-family: 'Montserrat', sans-serif;
 
 }
@@ -275,7 +438,7 @@ footer {
 .footer-wrapper {
     margin: 0 8%;
     padding: 0 2%;
-    background-color: #0D0D0D;
+    background-color: black;
     color: white;
 }
 
@@ -287,7 +450,7 @@ footer {
     font-size: 1rem;
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
-    background-color: #0D0D0D;
+    background-color: black;
     color: white;
 }
 
@@ -302,9 +465,11 @@ footer {
 }
 
 .logo img {
-    
-    height: 25rem;
+    width: 80%;
+    max-width: 100%;
+    /* height: 25rem; */
     border-radius: 50%;
+    padding: 0 0 1rem;
 }
 
 .logo-and-form {
@@ -321,11 +486,4 @@ footer {
     padding-top: 4rem;
 }
 
-/* .spacer {
-    width: 20%;
-}
-
-.login-link {
-    justify-content: flex-end;
-   
-} */ 
+/* END FOOTER */
